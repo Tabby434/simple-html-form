@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get to Know You Survey 💬</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradient 12s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #6a11cb;
+            box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>💫 Get to Know You Survey 💫</h1>
+
+    <form>
+
+        <div class="question-box">
+            <label for="name">What’s your name?</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="age">How old are you?</label>
+            <input type="number" id="age" name="age" placeholder="Your age">
+        </div>
+
+        <div class="question-box">
+            <label>Relationship Status 💕</label>
+            <select name="relationship">
+                <option>Single 😎</option>
+                <option>Dating 💞</option>
+                <option>Engaged 💍</option>
+                <option>Married 💒</option>
+                <option>It’s Complicated 🤷‍♀️</option>
+            </select>
+        </div>
+
+        <div class="question-box">
+            <label>What are your hobbies? 🎨⚽🎮</label>
+            <textarea name="hobbies" rows="3" placeholder="Tell us your hobbies..."></textarea>
+        </div>
+
+        <div class="question-box">
+            <label>Favourite Animal 🐶🐱🦁</label>
+            <input type="text" name="favanimal" placeholder="Enter your favourite animal">
+        </div>
+
+        <div class="question-box">
+            <label>What do you like to do when you’re bored? 😴</label>
+            <textarea name="bored" rows="3" placeholder="Describe what you like doing when bored..."></textarea>
+        </div>
+
+        <div class="question-box">
+            <label>What type of movies do you enjoy? 🎬</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="movie" value="action"> Action 💥</label>
+                <label><input type="checkbox" name="movie" value="comedy"> Comedy 😂</label>
+                <label><input type="checkbox" name="movie" value="romance"> Romance 💖</label>
+                <label><input type="checkbox" name="movie" value="horror"> Horror 👻</label>
+                <label><input type="checkbox" name="movie" value="drama"> Drama 🎭</label>
+                <label><input type="checkbox" name="movie" value="sci-fi"> Sci-Fi 🚀</label>
+                <label><input type="checkbox" name="movie" value="animation"> Animation 🐭</label>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <label>What type of music do you like? 🎵</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="music" value="pop"> Pop 🎤</label>
+                <label><input type="checkbox" name="music" value="rock"> Rock 🎸</label>
+                <label><input type="checkbox" name="music" value="hiphop"> Hip Hop 🎧</label>
+                <label><input type="checkbox" name="music" value="rnb"> R&B 💃</label>
+                <label><input type="checkbox" name="music" value="jazz"> Jazz 🎷</label>
+                <label><input type="checkbox" name="music" value="classical"> Classical 🎻</label>
+                <label><input type="checkbox" name="music" value="country"> Country 🤠</label>
+                <label><input type="checkbox" name="music" value="afrobeat"> Afrobeat 🪘</label>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <label>How do you think people view you? 👀</label>
+            <textarea name="perception" rows="3" placeholder="What do people say about you?"></textarea>
+        </div>
+
+        <div class="question-box">
+            <label>What do you like when someone does it for you? 💖</label>
+            <textarea name="likes" rows="3"
+                placeholder="Describe something that makes you feel appreciated..."></textarea>
+        </div>
+
+        <div class="question-box">
+            <label>Do you like this survey? 📝</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="survey" value="yes"> Yes 😄</label>
+                <label><input type="checkbox" name="survey" value="no"> No 😐</label>
+                <label><input type="checkbox" name="survey" value="maybe"> Maybe 🤔</label>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <label for="feedback">Your feedback about this form 💬</label>
+            <textarea id="feedback" name="feedback" rows="3"
+                placeholder="Tell us how you felt answering this..."></textarea>
+        </div>
+
+        <button type="submit">Submit 🚀</button>
+    </form>
+
+</body>
+
+</html>
